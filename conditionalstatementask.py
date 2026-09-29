@@ -85,11 +85,4 @@ else:
 #Prints "Integer Detected" if value is an integer.
 #Prints "Unknown Type" for any other type.
 
-value = "hello"
 
-if isinstance(value, str):
-    print("String Detected")
-elif isinstance(value, int):
-    print("Integer Detected")
-else:
-    print("Unknown Type")
