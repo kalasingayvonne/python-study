@@ -4,16 +4,20 @@
 #3.	Write a Python program that checks if a variable x is between 10 and 20 (inclusive)and if another variable y is greater than 100. If both conditions are true, print "Conditions met", otherwise print "Conditions not met"
 #4. Write a Python program that checks if a variable password is equal to the string "secret123". If it is, print "Access   granted", otherwise print "Access denied"
 
-num1 = 120
-num2 = 105
-num3 = 83
+num1=input('Enter first number')
+num2=input('Enter second number')
+num3=input('Enter third number')
 
-if num1 >=100:
-    print('largest number')
-elif num2<=100:
-    print('middle number')
+num1=int(num1)
+num2=int(num2)
+num3=int(num3)
+
+if num1>num2 and num1>num3:
+    print(f'{num1} is the largest')
+elif num2>num1 and num2>num3:
+    print(f'{num2} is the largest')
 else:
-    print('smallest number')
+    print(f'{num3} is the largest')
 
 
 temp =25
@@ -58,14 +62,16 @@ else:
 #If str2 is longer than str1, print "str2 is longer".
 #If both have equal length, print "Both are of equal length".
 
-str1="100cm"
-str2="150cm"
-if str1>str2:
-    print('str1 is longer')
-elif str1<str2:
-    print('str2 is longer')
+#use len function
+str1 = "hello"
+str2 = "hi"
+
+if len(str1) > len(str2):
+    print("str1 is longer")
+elif len(str2) > len(str1):
+    print("str2 is longer")
 else:
-    print('both are of equal length')\
+    print("Both are of equal length")
 
 #Given a list valid_ids = [101, 102, 103] and a variable user_id = 105, write a conditional statement that:
 #Prints "Access Granted" if user_id is in valid_ids.
@@ -84,3 +90,14 @@ else:
 #Prints "String Detected" if value is a string.
 #Prints "Integer Detected" if value is an integer.
 #Prints "Unknown Type" for any other type.
+
+value = "hello"
+
+if isinstance(value, str):
+    print("String Detected")
+elif isinstance(value, int):
+    print("Integer Detected")
+else:
+    print("Unknown Type")
+
+
