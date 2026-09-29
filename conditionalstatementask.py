@@ -24,8 +24,8 @@ elif temp>15:
 else:
     print('cold temperature')
 
-x = 15
-y = 150
+x = 5
+y = 200
 
 if 10 <= x <= 20 and y > 100:
     print("Conditions met")
