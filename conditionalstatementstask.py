@@ -84,5 +84,3 @@ else:
 #Prints "String Detected" if value is a string.
 #Prints "Integer Detected" if value is an integer.
 #Prints "Unknown Type" for any other type.
-
-
