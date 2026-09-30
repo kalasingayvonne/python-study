@@ -3,8 +3,8 @@
 # If true, check if the attendance is greater than 80.
 # If both conditions are true, print "Excellent student", otherwise print "Good score, but attendance needs improvement"
 
-student_score = float(input("Enter student score: "))
-attendance = float(input("Enter attendance percentage: "))
+student_score =100
+attendance=100
 
 if student_score > 90:
     if attendance > 80:
@@ -26,7 +26,7 @@ else:
 #If not, print "Transaction approved."
 #Otherwise “Wrong account type”
 
-amount = int(input("Enter transaction amount: "))
+amount = float(input("Enter transaction amount:"))
 account_type = input("Enter account type (Standard/Premium): ")
 
 if account_type == "Standard":
