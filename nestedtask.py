@@ -47,21 +47,17 @@ else:
 #"Only y is even" if only y is even.
 #"Neither x nor y are even" if both are odd.
 
-x=7
-y=14
+x = 7
+y = 14
 
-x=int(x)
-y=int(y)
-
-if x=='even':
-    if y=='even':
-     print('x and y are both even')
+if y % 2 == 0:
+    if x % 2 == 0:
+        print("x and y are both even")
     else:
-     print('x and y are odd')
-     if y=='even':
-         print('only y is even')
+        print("Only y is even")
 else:
-    print('neither x nor y are even')
+    if x % 2 != 0:
+        print("Neither x nor y are even")
 
 
 
