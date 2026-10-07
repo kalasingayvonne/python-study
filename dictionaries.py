@@ -29,7 +29,7 @@ print(student1)
 student1['skills']=['py','web dev','UI']
 
 print(student1['skills'][1])
-print(student1['hobbies'][0])
+print(student1['hobbies'])
 
 
 #keys
